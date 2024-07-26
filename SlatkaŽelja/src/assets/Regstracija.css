@@ -1,0 +1,247 @@
+body {
+  background-color: #ffffff;
+}
+
+li {
+  font-size: 1.75rem;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  color: #fff;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.image {
+  max-width: 100px;
+  height: auto;
+}
+
+.navbar-brand {
+  font-family: 'Caveat', cursive;
+  color: rgb(0, 0, 0);
+  font-size: 1.75rem;
+}
+
+p {
+  font-family: 'Caveat', cursive;
+  color: rgb(0, 0, 0);
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-brand {
+  font-family: 'Caveat', cursive;
+  color: rgb(0, 0, 0);
+}
+
+.navbar {
+  margin-top: 2.5%;
+  background-color: rgb(255, 255, 255);
+  border-color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #000000;
+  font-size: 2.75rem;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #e67e22;
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #000000;
+  font-size: 2.75rem;
+}
+
+.navbar-inverse .navbar-brand:hover {
+  color: #e67e22;
+}
+
+.navbar-brand,
+.navbar-nav > li > a {
+  font-family: 'Caveat', cursive !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: block;
+  padding: 16px;
+  background-color: white;
+  font-family: 'Caveat', cursive;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+}
+
+.container.signin p {
+  font-size: 2rem;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type=text],
+input[type=password],
+input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+.registerbtn {
+  background-color: #3498db;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  background-color: #2980b9;
+  opacity: 1;
+}
+
+a {
+  color: dodgerblue;
+}
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.message-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  z-index: 1;
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  font-size: 1.125rem;
+}
+
+.error-message {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #ca0a0a;
+  color: white !important;
+  text-align: center;
+  z-index: 1;
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  font-size: 1.125rem;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand,
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .container label,
+  .container input,
+  .container button {
+    font-size: 0.875rem;
+    padding: 8px;
+  }
+
+  .registerbtn {
+    padding: 12px 16px;
+  }
+
+  .message-container,
+  .error-message {
+    font-size: 0.875rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.75rem;
+    color: #000000;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand,
+  .nav-link {
+    font-size: 0.875rem;
+  }
+
+  p {
+    font-size: 0.875rem;
+  }
+
+  .container label,
+  .container input,
+  .container button {
+    font-size: 0.75rem;
+    padding: 6px;
+  }
+
+  .registerbtn {
+    padding: 10px 14px;
+  }
+
+  .message-container,
+  .error-message {
+    font-size: 0.75rem;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
